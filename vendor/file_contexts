@@ -3,3 +3,7 @@
 
 # Persist subsystem
 /mnt/vendor/persist/subsys(/.*)?            u:object_r:persist_subsys_file:s0
+
+# Xiaomi thermal daemon
+/(vendor|system/vendor)/bin/mi_thermald     u:object_r:mi_thermald_exec:s0
+/data/vendor/thermal(/.*)?                  u:object_r:vendor_thermal_data_file:s0
