@@ -8,3 +8,6 @@ allow hal_audio_default sound_device:chr_file rw_file_perms;
 allow hal_audio_default sysfs:file rw_file_perms;
 unix_socket_connect(hal_audio_default, property, init)
 unix_socket_connect(hal_audio_default, property, hal_sensors_default)
+
+# Allow Audio hal to find system_suspend_hwservice
+allow hal_audio_default system_suspend_hwservice:hwservice_manager find;
