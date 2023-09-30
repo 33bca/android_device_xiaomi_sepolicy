@@ -12,6 +12,10 @@ allow system_app vendor_sysfs_qcom_battery:dir search;
 allow system_app vendor_sysfs_usb_supply:file r_file_perms;
 allow system_app vendor_sysfs_usb_supply:dir r_dir_perms;
 
+# LED
+allow system_app sysfs_leds:dir search;
+allow system_app sysfs_leds:dir r_dir_perms;
+
 # Thermal
 allow system_app vendor_thermal_data_file:dir create_dir_perms;
 allow system_app vendor_thermal_data_file:file create_file_perms;
