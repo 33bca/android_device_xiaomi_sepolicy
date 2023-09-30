@@ -7,3 +7,6 @@ allow hal_sensors_default vendor_sysfs_graphics:file r_file_perms;
 # Allow Sensors hal to find hal_audio_hwservice
 hal_client_domain(hal_sensors_default, hal_audio)
 allow hal_sensors_default hal_audio_hwservice:hwservice_manager find;
+
+# Dontaudit Sensors to read default_prop
+dontaudit hal_sensors_default default_prop:file read;
