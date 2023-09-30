@@ -9,5 +9,8 @@ allow hal_audio_default sysfs:file rw_file_perms;
 unix_socket_connect(hal_audio_default, property, init)
 unix_socket_connect(hal_audio_default, property, hal_sensors_default)
 
+# Allow hal_audio_default to access sensor service
+allow hal_audio_default fwk_sensor_hwservice:hwservice_manager find;
+
 # Allow Audio hal to find system_suspend_hwservice
 allow hal_audio_default system_suspend_hwservice:hwservice_manager find;
