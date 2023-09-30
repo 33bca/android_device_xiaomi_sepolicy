@@ -1,0 +1,6 @@
+# Audio
+allow platform_app vendor_audio_data_file:dir write;
+allow platform_app vendor_audio_data_file:dir { add_name search };
+allow platform_app vendor_audio_data_file:file { append create getattr open read setattr write };
+allow platform_app sound_device:chr_file { open read write };
+get_prop(platform_app, vendor_audio_prop)

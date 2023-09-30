@@ -1,3 +1,8 @@
+# Audio
+allow system_app sound_device:chr_file { open read write };
+get_prop(system_app, vendor_audio_prop)
+get_prop(system_app, audio_config_prop)
+
 # Battery
 allow system_app vendor_sysfs_battery_supply:file r_file_perms;
 allow system_app vendor_sysfs_battery_supply:dir r_dir_perms;
