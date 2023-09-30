@@ -4,6 +4,10 @@ allow system_server vendor_audio_prop:file map;
 allow system_server audioserver:file write;
 allow system_server sound_device:chr_file rw_file_perms;
 
+# IR
+allow system_server ir_spi_device:chr_file rw_file_perms;
+allow system_server ir_spi_device:chr_file { ioctl open read write };
+
 # Thermal
 allow system_server sysfs_thermal:dir search;
 allow system_server sysfs_thermal:file r_file_perms;

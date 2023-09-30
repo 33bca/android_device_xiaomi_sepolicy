@@ -1,1 +1,5 @@
+# Audio
 type sound_device, dev_type, mlstrustedobject;
+
+# IR
+type ir_spi_device, dev_type;
