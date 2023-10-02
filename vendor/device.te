@@ -7,3 +7,6 @@ type migt_dev, dev_type, mlstrustedobject;
 
 # IR
 type ir_spi_device, dev_type;
+
+# Ril
+type vendor_radio_smd_device, dev_type;
