@@ -1,0 +1,2 @@
+# MiCharge
+vendor.xiaomi.hardware.micharge::IMiCharge u:object_r:vendor_hal_micharge_xiaomi_hwservice:s0
