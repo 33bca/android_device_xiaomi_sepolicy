@@ -1,3 +1,4 @@
+hal_client_domain(audioserver, hal_dms)
 allow audioserver system_server:dir search;
 allow audioserver mediaserver:dir search;
 allow audioserver mediaserver:file { open read };

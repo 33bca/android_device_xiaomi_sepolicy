@@ -1,2 +1,5 @@
+# Dolby
+vendor.dolby.hardware.dms::IDms          u:object_r:hal_dms_hwservice:s0
+
 # MiCharge
 vendor.xiaomi.hardware.micharge::IMiCharge u:object_r:vendor_hal_micharge_xiaomi_hwservice:s0

@@ -4,6 +4,9 @@ allow system_server vendor_audio_prop:file map;
 allow system_server audioserver:file write;
 allow system_server sound_device:chr_file rw_file_perms;
 
+# Dolby
+hal_client_domain(system_server, hal_dms)
+
 # MiCharge
 allow system_server vendor_hal_micharge_xiaomi_default:binder { call transfer };
 
