@@ -1,3 +1,7 @@
+# Camera
+allow vendor_hal_perf_default hal_camera_default:dir r_dir_perms;
+allow vendor_hal_perf_default hal_camera_default:file r_file_perms;
+
 # Power
 allow vendor_hal_perf_default hal_power_default:dir r_dir_perms;
 allow vendor_hal_perf_default hal_power_default:file r_file_perms;

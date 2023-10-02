@@ -1,2 +1,6 @@
+# Camera
+vendor_public_prop(vendor_camera_sensor_prop)
+vendor_public_prop(vendor_camera_p3enable_prop)
+
 # Thermal
 vendor_public_prop(vendor_thermal_normal_prop)

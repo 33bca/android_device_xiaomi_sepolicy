@@ -1,5 +1,9 @@
 # Audio
 type sound_device, dev_type, mlstrustedobject;
 
+# Camera
+type camlog_device, dev_type;
+type migt_dev, dev_type, mlstrustedobject;
+
 # IR
 type ir_spi_device, dev_type;
