@@ -15,6 +15,10 @@ hal_client_domain(system_server, hal_dms)
 # MiCharge
 allow system_server vendor_hal_micharge_xiaomi_default:binder { call transfer };
 
+# Misys
+allow system_server hal_misys_default:binder call;
+allow system_server hal_misys_hwservice:hwservice_manager find;
+
 # IR
 allow system_server ir_spi_device:chr_file rw_file_perms;
 allow system_server ir_spi_device:chr_file { ioctl open read write };

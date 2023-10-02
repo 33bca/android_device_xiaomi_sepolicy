@@ -8,3 +8,6 @@ vendor.dolby.hardware.dms::IDms          u:object_r:hal_dms_hwservice:s0
 
 # MiCharge
 vendor.xiaomi.hardware.micharge::IMiCharge u:object_r:vendor_hal_micharge_xiaomi_hwservice:s0
+
+# Misys
+vendor.xiaomi.hardware.misys::IMiSys       u:object_r:hal_misys_hwservice:s0
