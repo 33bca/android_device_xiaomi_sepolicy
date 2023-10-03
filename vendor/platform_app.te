@@ -42,3 +42,6 @@ hal_client_domain(platform_app, hal_dms)
 # Misys
 allow platform_app hal_misys_hwservice:hwservice_manager find;
 allow platform_app hal_misys_default:binder call;
+
+# Touchfeature
+allow platform_app hal_touchfeature_xiaomi_hwservice:hwservice_manager find;

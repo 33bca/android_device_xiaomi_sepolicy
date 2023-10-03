@@ -11,3 +11,7 @@ vendor_public_prop(vendor_parsedalgo_prop)
 
 # Thermal
 vendor_public_prop(vendor_thermal_normal_prop)
+
+# Touchfeature
+vendor_public_prop(vendor_panel_info_prop)
+vendor_restricted_prop(vendor_touchfeature_prop)
