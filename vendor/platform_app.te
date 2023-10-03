@@ -32,6 +32,10 @@ get_prop(platform_app, vendor_camera_prop)
 hal_client_domain(platform_app, vendor_hal_camerapostproc_xiaomi)
 hal_client_domain(platform_app, hal_quickcamera)
 
+# Displayfeature
+allow platform_app vendor_hal_displayfeature_xiaomi_hwservice:hwservice_manager find;
+allow platform_app vendor_hal_displayfeature_xiaomi_default:binder call;
+
 # Dolby
 hal_client_domain(platform_app, hal_dms)
 

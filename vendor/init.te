@@ -3,6 +3,9 @@ allow init vendor_sysfs_usb_supply:file setattr;
 allow init vendor_sysfs_battery_supply:file setattr;
 allow init vendor_sysfs_qcom_battery:file setattr;
 
+# Displayfeature
+set_prop(vendor_init, vendor_displayfeature_prop)
+
 # Partition
 allow init block_device:blk_file setattr;
 allow init vendor_file:file execute;

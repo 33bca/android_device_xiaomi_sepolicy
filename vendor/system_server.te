@@ -9,6 +9,12 @@ allow system_server hal_camera:binder transfer;
 allow system_server hal_camera:binder { call transfer };
 allow system_server hal_camera:fd *;
 
+# Displayfeature
+allow system_server vendor_displayfeature:binder { call transfer };
+allow system_server vendor_displayfeature:fd *;
+get_prop(system_server, vendor_displayfeature_prop)
+hal_client_domain(system_server, vendor_hal_displayfeature_xiaomi)
+
 # Dolby
 hal_client_domain(system_server, hal_dms)
 

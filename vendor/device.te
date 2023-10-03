@@ -5,6 +5,9 @@ type sound_device, dev_type, mlstrustedobject;
 type camlog_device, dev_type;
 type migt_dev, dev_type, mlstrustedobject;
 
+# Displayfeature
+type vendor_displayfeature_device, dev_type;
+
 # IR
 type ir_spi_device, dev_type;
 
