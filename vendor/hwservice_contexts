@@ -11,3 +11,7 @@ vendor.xiaomi.hardware.micharge::IMiCharge u:object_r:vendor_hal_micharge_xiaomi
 
 # Misys
 vendor.xiaomi.hardware.misys::IMiSys       u:object_r:hal_misys_hwservice:s0
+
+# Sensors
+vendor.xiaomi.sensor.citsensorservice::ICitSensorService   u:object_r:vendor_hal_citsensorservice_xiaomi_hwservice:s0
+vendor.xiaomi.sensor.communicate::ISensorCommunicate  u:object_r:vendor_hal_sensorcommunicate_hwservice:s0

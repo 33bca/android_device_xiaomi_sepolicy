@@ -57,6 +57,9 @@
 /dev/mius(.*)?                                     u:object_r:sensors_device:s0
 /sys/bus/iio/devices                               u:object_r:vendor_sysfs_iio:s0
 /sys/devices/platform/us_prox.0/iio:device1(/.*)?  u:object_r:vendor_sysfs_iio:s0
+/(vendor|system/vendor|odm|vendor/odm)/bin/hw/vendor.xiaomi.sensor.citsensorservice@1.1-service u:object_r:vendor_hal_citsensorservice_xiaomi_default_exec:s0
+/(vendor|system/vendor|odm|vendor/odm)/bin/hw/vendor.xiaomi.sensor.citsensorservice@2.0-service u:object_r:vendor_hal_citsensorservice_xiaomi_default_exec:s0
+/(vendor|system/vendor|odm|vendor/odm)/bin/hw/vendor.xiaomi.sensor.communicate@1.0-service u:object_r:vendor_hal_sensorcommunicate_default_exec:s0
 
 # Xiaomi thermal daemon
 /(vendor|system/vendor)/bin/mi_thermald     u:object_r:mi_thermald_exec:s0
