@@ -19,5 +19,8 @@ allow hal_sensors_default vendor_sysfs_iio:file rw_file_perms;
 hal_client_domain(hal_sensors_default, hal_audio)
 allow hal_sensors_default hal_audio_hwservice:hwservice_manager find;
 
+# Allow access to the uhid devices.
+allow hal_sensors_default uhid_device:chr_file rw_file_perms;
+
 # Dontaudit Sensors to read default_prop
 dontaudit hal_sensors_default default_prop:file read;
