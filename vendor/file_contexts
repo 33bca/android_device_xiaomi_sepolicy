@@ -9,6 +9,7 @@
 
 # Camera
 /data/vendor/perfspy(/.*)?                                                    u:object_r:vendor_camera_data_file:s0
+/dev/stmvl53l5                                                                u:object_r:stmvl53l5_device:s0
 /mnt/vendor/persist/camera(/.*)?                                              u:object_r:camera_persist_file:s0
 /persist/camera(/.*)?                                                         u:object_r:camera_persist_file:s0
 /vendor/bin/camera_cal                                                        u:object_r:DualCameraCal_exec:s0

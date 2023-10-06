@@ -12,6 +12,7 @@ allow hal_camera_default proc_pressure_io:file { getattr open read write };
 allow hal_camera_default proc_pressure_mem:file { getattr open read write };
 allow hal_camera_default proc_meminfo:file { getattr open read };
 allow hal_camera_default self:capability sys_resource;
+allow hal_camera_default stmvl53l5_device:chr_file { ioctl open read write };
 allow hal_camera_default vendor_sysfs_devfreq:dir search;
 allow hal_camera_default vendor_sysfs_kgsl:file { getattr open read };
 allow hal_camera_default vendor_sysfs_battery_supply:dir search;
