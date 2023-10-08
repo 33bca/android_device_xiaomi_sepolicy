@@ -97,6 +97,7 @@ vendor.mi_sf.                                   u:object_r:vendor_displayfeature
 vendor.video.mode.status                        u:object_r:vendor_displayfeature_prop:s0
 
 # NFC
+persist.vendor.nfc.                             u:object_r:vendor_nfc_prop:s0
 ro.vendor.se.type                               u:object_r:vendor_nfc_prop:s0
 
 # Ril
