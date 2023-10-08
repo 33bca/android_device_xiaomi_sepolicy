@@ -96,6 +96,9 @@ vendor.hbm.enable                               u:object_r:vendor_displayfeature
 vendor.mi_sf.                                   u:object_r:vendor_displayfeature_prop:s0
 vendor.video.mode.status                        u:object_r:vendor_displayfeature_prop:s0
 
+# NFC
+ro.vendor.se.type                               u:object_r:vendor_nfc_prop:s0
+
 # Ril
 persist.vendor.radio.imei                       u:object_r:vendor_radio_prop:s0
 persist.vendor.radio.meid                       u:object_r:vendor_radio_prop:s0
