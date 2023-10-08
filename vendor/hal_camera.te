@@ -4,6 +4,7 @@ allow hal_camera system_server:binder { call transfer };
 allow hal_camera system_server:binder transfer;
 allow hal_camera system_server:fd *;
 allow hal_camera_default vendor_qdsp_device:chr_file r_file_perms;
+allow hal_camera_default vendor_npu_device:chr_file r_file_perms;
 allow hal_camera_default mnt_vendor_file:dir search;
 allow hal_camera_default camera_persist_file:dir search;
 allow hal_camera_default vendor_persist_sensors_file:dir search;
