@@ -1,3 +1,6 @@
+# last_kmsg
+genfscon proc /last_kmsg                                         u:object_r:proc_last_kmsg:s0
+
 # Touchfeature
 genfscon proc "/tp_hal_version" u:object_r:proc_tp_file:s0
 genfscon sysfs "/devices/virtual/touch/touch_dev/abnormal_event" u:object_r:sysfs_touch_hostprocess:s0

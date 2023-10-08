@@ -11,6 +11,9 @@ type camera_persist_file, file_type, mlstrustedobject, vendor_persist_type;
 # Displayfeature
 type vendor_sysfs_displayfeature, fs_type, sysfs_type;
 
+# last_kmsg
+type proc_last_kmsg, fs_type, proc_type;
+
 # Ril
 type vendor_modem_data_file, data_file_type, file_type;
 
