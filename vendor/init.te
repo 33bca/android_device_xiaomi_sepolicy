@@ -4,6 +4,7 @@ allow init vendor_sysfs_battery_supply:file setattr;
 allow init vendor_sysfs_qcom_battery:file setattr;
 
 # Displayfeature
+set_prop(init, vendor_displayfeature_prop)
 set_prop(vendor_init, vendor_displayfeature_prop)
 
 # last_kmsg
