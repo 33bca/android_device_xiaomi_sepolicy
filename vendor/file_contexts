@@ -130,5 +130,20 @@
 /(vendor|system/vendor)/bin/mi_thermald     u:object_r:mi_thermald_exec:s0
 /data/vendor/thermal(/.*)?                  u:object_r:vendor_thermal_data_file:s0
 
+# UFS
+/sys/block/sda/device/block/sda/size u:object_r:ufs_sysfs:s0
+/sys/class/block/sda/device/rev u:object_r:ufs_sysfs:s0
+/sys/class/mi_memory/mi_memory_device/ddr/ddr_vendor u:object_r:ufs_sysfs:s0
+/sys/class/mi_memory/mi_memory_device/ufshcd0/dump_device_desc u:object_r:ufs_sysfs:s0
+/sys/class/mi_memory/mi_memory_device/ufshcd0/dump_health_desc u:object_r:ufs_sysfs:s0
+/sys/class/mi_memory/mi_memory_device/ufshcd0/dump_string_desc_serial u:object_r:ufs_sysfs:s0
+/sys/devices/platform/soc/4804000.ufshc/host0/target0:0:0/0:0:0:0/block/sda/size u:object_r:ufs_sysfs:s0
+/sys/devices/platform/soc/4804000.ufshc/host0/target0:0:0/0:0:0:0/rev u:object_r:ufs_sysfs:s0
+/sys/devices/platform/soc/4804000.ufshc/host0/target0:0:0/0:0:0:0/vendor u:object_r:ufs_sysfs:s0
+/sys/devices/virtual/mi_memory/mi_memory_device/ddr/ddr_vendor u:object_r:ufs_sysfs:s0
+/sys/devices/virtual/mi_memory/mi_memory_device/ufshcd0/dump_device_desc u:object_r:ufs_sysfs:s0
+/sys/devices/virtual/mi_memory/mi_memory_device/ufshcd0/dump_health_desc u:object_r:ufs_sysfs:s0
+/sys/devices/virtual/mi_memory/mi_memory_device/ufshcd0/dump_string_desc_serial u:object_r:ufs_sysfs:s0
+
 # USB
 /vendor/bin/init\.mi\.usb\.sh                 u:object_r:vendor_qti_init_shell_exec:s0

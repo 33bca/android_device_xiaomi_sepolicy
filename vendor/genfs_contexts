@@ -57,3 +57,13 @@ genfscon sysfs /class/leds/vibrator/activate                                  u:
 genfscon sysfs /class/leds/vibrator/state                                     u:object_r:sysfs_leds:s0
 genfscon sysfs /class/leds/vibrator/duration                                  u:object_r:sysfs_leds:s0
 genfscon sysfs /class/leds/vibrator/trigger                                   u:object_r:sysfs_leds:s0
+
+# UFS
+genfscon sysfs /class/mi_memory/mi_memory_device/ufshcd0/dump_string_desc_serial u:object_r:ufs_sysfs:s0
+genfscon sysfs /class/mi_memory/mi_memory_device/ufshcd0/dump_health_desc u:object_r:ufs_sysfs:s0
+genfscon sysfs /class/mi_memory/mi_memory_device/ufshcd0/dump_device_desc u:object_r:ufs_sysfs:s0
+genfscon sysfs /class/mi_memory/mi_memory_device/ddr/ddr_vendor u:object_r:ufs_sysfs:s0
+genfscon sysfs /devices/virtual/mi_memory/mi_memory_device/ufshcd0/dump_string_desc_serial u:object_r:ufs_sysfs:s0
+genfscon sysfs /devices/virtual/mi_memory/mi_memory_device/ufshcd0/dump_health_desc u:object_r:ufs_sysfs:s0
+genfscon sysfs /devices/virtual/mi_memory/mi_memory_device/ufshcd0/dump_device_desc u:object_r:ufs_sysfs:s0
+genfscon sysfs /devices/virtual/mi_memory/mi_memory_device/ddr/ddr_vendor u:object_r:ufs_sysfs:s0

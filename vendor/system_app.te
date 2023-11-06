@@ -67,5 +67,8 @@ allow system_app touchfeature_device:file { getattr map read };
 get_prop(system_app, vendor_touchfeature_prop)
 hal_client_domain(system_app, hal_touchfeature_xiaomi)
 
+# UFS
+allow system_app ufs_sysfs:file { getattr open read };
+
 # Vibrator
 allow system_app hal_vibrator_default:binder call;
