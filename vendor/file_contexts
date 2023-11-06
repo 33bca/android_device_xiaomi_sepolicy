@@ -90,6 +90,10 @@
 /(vendor|system/vendor|odm|vendor/odm)/bin/hw/vendor.xiaomi.sensor.citsensorservice@2.0-service u:object_r:vendor_hal_citsensorservice_xiaomi_default_exec:s0
 /(vendor|system/vendor|odm|vendor/odm)/bin/hw/vendor.xiaomi.sensor.communicate@1.0-service u:object_r:vendor_hal_sensorcommunicate_default_exec:s0
 
+# SSR
+/sys/bus/msm_subsys/devices/subsys[0-9]+/name                  u:object_r:vendor_sysfs_ssr:s0
+/sys/bus/msm_subsys/devices/subsys[0-9]+/restart_level         u:object_r:vendor_sysfs_ssr_toggle:s0
+
 # Touch firmware
 /(vendor|system/vendor|odm|vendor/odm)/firmware/Conf_MultipleTest.ini                      u:object_r:vendor_app_file:s0
 
