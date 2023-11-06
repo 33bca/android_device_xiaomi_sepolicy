@@ -84,6 +84,9 @@
 /(vendor|system/vendor|odm|vendor/odm)/bin/hw/vendor.xiaomi.sensor.citsensorservice@2.0-service u:object_r:vendor_hal_citsensorservice_xiaomi_default_exec:s0
 /(vendor|system/vendor|odm|vendor/odm)/bin/hw/vendor.xiaomi.sensor.communicate@1.0-service u:object_r:vendor_hal_sensorcommunicate_default_exec:s0
 
+# Touch firmware
+/(vendor|system/vendor|odm|vendor/odm)/firmware/Conf_MultipleTest.ini                      u:object_r:vendor_app_file:s0
+
 # Touchfeature
 /dev/xiaomi-touch                                           u:object_r:touchfeature_device:s0
 /sys/devices/virtual/touch/touch_dev/abnormal_event         u:object_r:sysfs_touch_hostprocess:s0
