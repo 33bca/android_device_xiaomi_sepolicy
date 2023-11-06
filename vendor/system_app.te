@@ -65,3 +65,7 @@ hal_client_domain(system_app, hal_touchfeature_xiaomi)
 
 # Vibrator
 allow system_app hal_vibrator_default:binder call;
+
+# zram
+allow system_app sysfs_zram:dir r_dir_perms;
+allow system_app sysfs_zram:file r_file_perms;
