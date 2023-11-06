@@ -68,6 +68,11 @@
 /(vendor|system/vendor)/bin/hw/android\.hardware\.nfc@1\.2-service\.st  u:object_r:hal_nfc_default_exec:s0
 /(vendor|system/vendor)/bin/hw/android\.hardware\.nfc-service\.st       u:object_r:hal_nfc_default_exec:s0
 
+# Oem fastcharge
+/sys/class/power_supply/bms/fastcharge_mode                             u:object_r:sysfs_fastcharge:s0
+/sys/class/qcom-battery/fastchg_mode                                    u:object_r:sysfs_fastcharge:s0
+/sys/class/qcom-battery/quick_charge_type                               u:object_r:sysfs_fastcharge:s0
+
 # Persist subsystem
 /mnt/vendor/persist/subsys(/.*)?            u:object_r:persist_subsys_file:s0
 
