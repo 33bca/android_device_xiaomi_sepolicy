@@ -1,4 +1,5 @@
 # Camera
+persist.vendor.aiie_capture_log.debug           u:object_r:vendor_camera_prop:s0
 persist.vendor.camera.mi.dualcal.               u:object_r:vendor_camera_prop:s0
 persist.vendor.camera.mi.module.                u:object_r:vendor_camera_prop:s0
 persist.vendor.EnableP3ColorSpace               u:object_r:vendor_camera_p3enable_prop:s0
