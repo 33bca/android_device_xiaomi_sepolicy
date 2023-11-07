@@ -7,6 +7,7 @@ persist.vendor.low.cutoff.                      u:object_r:vendor_camera_prop:s0
 vendor.camera.sensor.                           u:object_r:vendor_camera_sensor_prop:s0
 vendor.camera.sensor.logsystem                  u:object_r:vendor_camera_prop:s0
 vendor.camera.watermark.en                      u:object_r:vendor_camera_prop:s0
+vendor.miui.vcamera.data                        u:object_r:vendor_camera_prop:s0
 vendor.miui.vcamera.state                       u:object_r:vendor_camera_prop:s0
 vendor.vidhance.preview.vs.cropfactor           u:object_r:vendor_camera_prop:s0
 vendor.vidhance.video.vs.cropfactor             u:object_r:vendor_camera_prop:s0
