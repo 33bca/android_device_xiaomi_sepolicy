@@ -11,6 +11,10 @@ set_prop(vendor_init, vendor_displayfeature_prop)
 allow init proc_last_kmsg:file r_file_perms;
 allow init proc_last_kmsg:file setattr;
 
+# Mount
+allow init vendor_configs_file:dir mounton;
+allow init vendor_configs_file:file mounton;
+
 # Partition
 allow init block_device:blk_file setattr;
 allow init vendor_file:file execute;
