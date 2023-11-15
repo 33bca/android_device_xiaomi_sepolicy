@@ -103,6 +103,14 @@ vendor.video.mode.status                        u:object_r:vendor_displayfeature
 # HVDCP
 ctl.vendor.hvdcp_opti                           u:object_r:vendor_hvdcp_opti_prop:s0
 
+# Mlipay
+persist.vendor.sys.pay.fido                     u:object_r:vendor_payment_security_prop:s0
+persist.vendor.sys.pay.fido2                    u:object_r:vendor_payment_security_prop:s0
+persist.vendor.sys.pay.ifaa                     u:object_r:vendor_payment_security_prop:s0
+persist.vendor.sys.pay.soter                    u:object_r:vendor_payment_security_prop:s0
+persist.vendor.sys.pay.widevine                 u:object_r:vendor_payment_security_prop:s0
+persist.vendor.sys.rkp.status                   u:object_r:vendor_payment_security_prop:s0
+
 # NFC
 persist.vendor.nfc.                             u:object_r:vendor_nfc_prop:s0
 ro.vendor.se.type                               u:object_r:vendor_nfc_prop:s0
