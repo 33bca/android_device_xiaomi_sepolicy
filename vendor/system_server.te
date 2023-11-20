@@ -36,6 +36,7 @@ allow system_server ir_spi_device:chr_file rw_file_perms;
 allow system_server ir_spi_device:chr_file { ioctl open read write };
 
 # Oem fastcharge
+allow system_server sysfs_fastcharge:file r_file_perms;
 allow system_server sysfs_wakeup:file r_file_perms;
 
 # Sensors
