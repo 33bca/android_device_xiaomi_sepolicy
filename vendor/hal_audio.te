@@ -21,5 +21,8 @@ allow hal_audio_default hal_dms_hwservice:hwservice_manager find;
 # Allow Audio hal to find system_suspend_hwservice
 allow hal_audio_default system_suspend_hwservice:hwservice_manager find;
 
+# Allow audio hal to set audio_prop
+set_prop(hal_audio_default, vendor_audio_prop)
+
 # Dontaudit Audio to read default_prop
 dontaudit hal_audio_default default_prop:file read;
