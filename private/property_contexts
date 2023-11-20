@@ -12,6 +12,9 @@ sys.fp.miui.token                       u:object_r:exported_system_prop:s0
 ro.hardware.chipname                    u:object_r:exported_default_prop:s0
 
 # MIUI
+ro.boot.hwc                             u:object_r:exported_default_prop:s0
+ro.boot.hwname                          u:object_r:exported_default_prop:s0
+ro.boot.hwversion                       u:object_r:exported_default_prop:s0
 ro.miui.                                u:object_r:exported_system_prop:s0
 ro.product.marketname                   u:object_r:exported_default_prop:s0 exact string
 ro.product.mod_device                   u:object_r:exported_default_prop:s0 exact string
