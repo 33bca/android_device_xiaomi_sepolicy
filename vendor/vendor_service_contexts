@@ -1,1 +1,5 @@
+# Camera
 android.hardware.camera.provider.ICameraProvider/vendor_qti/0 u:object_r:hal_camera_service:s0
+
+# Displayfeature
+vendor.xiaomi.hardware.displayfeature_aidl.IDisplayFeature/default u:object_r:vendor_hal_displayfeature_xiaomi_service:s0
