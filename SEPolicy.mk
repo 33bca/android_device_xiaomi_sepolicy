@@ -1,5 +1,10 @@
 SEPOLICY_PATH_XIAOMI:= device/xiaomi/sepolicy
 
+ifeq ($(TARGET_USES_LIBPERFMGR),true)
+BOARD_VENDOR_SEPOLICY_DIRS += \
+    $(SEPOLICY_PATH_XIAOMI)/power-libperfmgr/vendor
+endif
+
 BOARD_VENDOR_SEPOLICY_DIRS += \
     $(SEPOLICY_PATH_XIAOMI)/vendor
 
